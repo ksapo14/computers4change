@@ -200,7 +200,6 @@ section .text-container .text-box h3{
   color: grey;
   background-color: rgba(0, 105, 204, 0.669);
   font-family: "Raleway", "sans-serif";
-  height: 60vh;
 }
 
 .final-bar table{
