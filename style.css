@@ -111,7 +111,6 @@ section .text-container .text-box h3{
 }
   
 @media (max-width: 900px){
-  
   section .text-container{
     flex-direction: column;
   }
@@ -123,6 +122,7 @@ section .text-container .text-box h3{
   }
   .final-bar table {
     width: 10vh;
+    text-align: center;
   }
   .ln-fb-ul-a {
     display: none;
