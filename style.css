@@ -111,10 +111,6 @@ section .text-container .text-box h3{
 }
   
 @media (max-width: 900px){
-  section h1{
-    font-size: 2rem;
-    text-align: center;
-  }
   section .text-container{
     flex-direction: column;
   }
@@ -124,7 +120,10 @@ section .text-container .text-box h3{
   .icon {
     display: none;
   }
-  .final-bar table {
+  .final-bar {
+    display: none;
+  }
+ /*.final-bar table {
     width: 10vh;
   }
   .ln-fb-ul-a {
@@ -137,8 +136,9 @@ section .text-container .text-box h3{
     display:none;
   }
   .fb-li {
-    text-align: center;
-  }
+    text-align: left;
+    margin: 0;
+  }*/
 }
 
 @media (max-width: 400px){
@@ -146,53 +146,47 @@ section .text-container .text-box h3{
     width: 200px;
   }
 }
-  
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
 
 .background {
   background-image: url(Images/BackgroundLaptop.jpg);
   background-repeat: no-repeat;
   opacity: 0.6;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: rgb(240, 240, 240);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform:translateY(100px) ;
-  }
 
-  100% {
-    opacity: 1;
-    transform:translateY(0px) ;
-  }
-  
-}
   
 .main_title {
   display: block;
   font-size: 150%;
   font-weight: bold;
-  color: black;
-  text-align: center;
-  padding: 37vh 20vh;
+  color: rgb(255, 255, 255);
+  padding:20% 3%;
   font-family: "Raleway", "sans-serif";
   background-color: rgba(0, 105, 204, 0.669);
-  margin-left: -10px;
-  margin-right: 0;
-  height: 100vh;
-  animation: fadeIn 2s;
+  height: 100%;
+}
+
+.main_title button {
+  height: 40px;
+  width: 120px;
+  margin: 20px;
+  background-color: deepskyblue;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+  color:white;
+  font-size: 18px;
+}
+
+.main_title button:hover {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.main_title h3 {
+  margin-left: 2%;
+  font-size: 20px;
 }
 
 .final-bar {
@@ -203,15 +197,11 @@ section .text-container .text-box h3{
 }
 
 .final-bar table{
-  width: 100vh;
+  width: 100%;
 }
 
 .final-bar ul{
   list-style-type: none;
-}
-
-.final-bar ul li{
-  padding: 0px;
 }
 
 .ln-fb-ul {
