@@ -194,7 +194,7 @@ section .text-container .text-box h3{
 }
 
 .final-bar table{
-  width: 100vh;
+  width: 100%;
 }
 
 .final-bar ul{
