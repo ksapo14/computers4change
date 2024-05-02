@@ -120,10 +120,7 @@ section .text-container .text-box h3{
   .icon {
     display: none;
   }
-  .final-bar {
-    display: none;
-  }
- /*.final-bar table {
+  .final-bar table {
     width: 10vh;
   }
   .ln-fb-ul-a {
@@ -138,7 +135,7 @@ section .text-container .text-box h3{
   .fb-li {
     text-align: left;
     margin: 0;
-  }*/
+  }
 }
 
 @media (max-width: 400px){
