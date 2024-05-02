@@ -122,7 +122,6 @@ section .text-container .text-box h3{
   }
   .final-bar table {
     width: 10vh;
-    text-align: center;
   }
   .ln-fb-ul-a {
     display: none;
@@ -134,7 +133,7 @@ section .text-container .text-box h3{
     display:none;
   }
   .fb-li {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -199,10 +198,6 @@ section .text-container .text-box h3{
 
 .final-bar ul{
   list-style-type: none;
-}
-
-.final-bar ul li{
-  padding: 0px;
 }
 
 .ln-fb-ul {
