@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+a {cursor: pointer;}
+
+/* Introduction Page */
+
+.intro {
+    background-color: rgb(18, 97, 175);
+    display: flex;
+    font-family: "Raleway", "sans-serif";
+    color:white;
+}
+
+.intro img {
+    opacity: 0.5;
+    width: 35%;
+    height: auto;
+}
+
+.intro .text-container {
+    margin: 5% 5%;
+    padding: 5%;
+}
+
+.intro .text-container h1 {
+    font-size: 35px;
+}
+
+.intro .text-container p {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Icons/Descriptions */
+
+.icons-descriptions {
+    display: flex;
+    height: auto;
+    margin-bottom: 50px;
+    margin-left: 4%;
+}
+
+.icons-descriptions .text-container {text-align: center;}
+
+.icons-descriptions img {
+    width: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+.icons-descriptions p {
+    font-family: "Raleway", "sans-serif";
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+}
+
+.icons-descriptions a {transition: color 0.2s;}
+
+.icons-descriptions a:hover {color: rgb(128, 150, 172);}
+
+/* Pledge */
+
+.pledge {
+    background-color: rgb(18, 97, 175);
+    display: flex;
+    font-family: "Raleway", "sans-serif";
+    color:white;
+    height: 50vh;
+}
+
+.pledge a {color:rgb(187, 187, 187);}
+
+.pledge img {
+    opacity: 0.5;
+    width: 21%;
+    height: auto;
+}
+
+.pledge .text-container1,.text-container2,.text-container3 {
+    margin: 5% 5%;
+    padding: 5%;
+}
+
+.pledge .text-container1,.text-container2,.text-container3 h1 {font-size: 35px;}
+
+
+
+.pledge .text-container1,.text-container2,.text-container3 p {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#ple1 .text-container1 {width: 60%;}
+
+#ple2 {
+    background-color:deepskyblue;
+    color: rgb(10, 0, 121);
+}
+
+#ple2 .text-container2 a {
+    color: rgba(0, 0, 0, 0.392)
+}
+
+#ple2 .text-container2 a:hover {
+    color: rgb(0, 0, 0)
+}
+
+#ple3 img {
+    opacity: 1;
+    margin-top: 3%;
+    width: 30%;
+}
+
+#ple3 {background-color:darkolivegreen;}
+
+#ple3 a:hover {color:rgb(163, 226, 163);}
+
+#ple3 .text-container3 {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+/* Carousel */
+
+body {margin: 0;}
+.pledge {display: none;}
+
+.carousel {
+    max-width: 2000px;
+    position: relative;
+}
+
+.next {
+    position: absolute;
+    top: 40%;
+    color: black;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.prev {
+    position: absolute;
+    top: 40%;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.next:hover,.prev:hover {
+    background-color: rgb(0,0,0,0.2);
+    color: grey;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    0% {
+        opacity: .4;
+    } 
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 20px}
+  }
+
+/* Signup  Field */
+
+.signup_field {
+    background-color: white;
+    display: flex;
+}
+
+.signup_field iframe {
+    width: 100%;
+    height: 1420px;
+}
+
+/* Contact Methoods */
+
+.contactus {
+    background-color: white;
+    font-family: "Raleway", "sans-serif";
+}
+
+.contactus .text-container {display: flex;}
+
+.contactus .email {
+    margin: 10%;
+}
+
+.contactus .email h1 {
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.contactus .email p {
+    font-weight: 700;
+    font-size: 200%;
+}
+
+/* Footer */
+
+.footer {
+    padding: 5%;
+    background-color: dodgerblue;
+    font-family: "Raleway", "sans-serif";
+    display: flex;
+    color: white;
+}
+
+.footer h2 {
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.footer p {
+    font-weight: 100;
+    opacity: 0.9;
+    margin-left: 5%;
+}
+
+.footer a {color: white;}
+
+.footer img {width: 10%;}
+
+.footer a:hover {color: black;}
+
+.f-cat {margin-left: 5%;}
+
+.f-cat h3 {margin-bottom: 5%;}
+
+.f-cat a {margin-bottom: 3%;}
+
+.vline {
+    border-left: 2px solid white;
+    height: 100px;
+}
