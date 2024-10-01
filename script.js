@@ -1,3 +1,8 @@
+// Text Shortener
+
+
+
+// Carousel Function
 let slideIndex = 1;
 document.addEventListener("DOMContentLoaded", function() {
     showSlides(slideIndex);
@@ -30,4 +35,17 @@ function showSlides (n) {
     }
 
     slides[slideIndex - 1].style.display = "flex";
+}
+
+let amntdonated = 250;
+document.addEventListener("DOMContentLoaded", function() {
+    updateDonated(amntdonated);
+});
+
+function updateDonated (a) {
+    document.getElementById("dnate").innerHTML = a;
+    document.getElementById("dnate1").innerHTML = a;
+
+    const percentage = a/10;
+    document.getElementById("ov-in-ov").style.width = `${percentage}%`;
 }

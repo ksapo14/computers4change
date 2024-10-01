@@ -91,7 +91,7 @@ a {cursor: pointer;}
 
 .pledge .text-container1,.text-container2,.text-container3 p {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #ple1 .text-container1 {width: 60%;}
@@ -173,10 +173,23 @@ body {margin: 0;}
     }
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 20px}
-  }
+/* On smaller screens, decrease text size */
+
+@media (max-width: 1100px) {
+    #ple1 .text-container1, .text-container2, .text-container3 {font-size: 25px}
+}
+
+@media (max-width: 700px) {
+    #ple1 .text-container1, .text-container2, .text-container3 {font-size: 20px}
+}
+
+@media (max-width: 375px) {
+    #ple1 .text-container1, .text-container2, .text-container3 {font-size: 17px}
+}
+
+@media (max-width: 300px) {
+    #ple1 .text-container1, .text-container2, .text-container3 {font-size: 15px}
+}
 
 /* Signup  Field */
 
@@ -250,4 +263,76 @@ body {margin: 0;}
 .vline {
     border-left: 2px solid white;
     height: 100px;
+}
+
+.oval {
+    position: relative;
+    width: 90%;
+    height: 70px;
+    background-color: rgb(18, 97, 175);
+    margin: 40px;
+    border-radius: 100px;
+}
+
+.oval p{
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 200px;
+    font-family: "Raleway", "sans-serif";
+    font-size: 20px;
+    color: white;
+}
+
+.ovalinoval {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 25%;
+    height: 50px;
+    background-color: white;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.ovalinoval p{
+    margin-top: 15px;
+    margin-left: 0px;
+    font-family: "Raleway", "sans-serif";
+    font-size: 20px;
+    color: black;
+}
+
+.text-oval {
+    background-color: white;
+    display: flex;
+    font-family: "Raleway", "sans-serif";
+    align-items: center;
+    height: 50vh;
+    font-size: 20px;
+}
+
+.txt-ov-txt {
+    padding: 20px;
+    margin: 40px;
+    width: 70%;
+}
+
+.slant-box {
+    background-color: rgb(30, 94, 255);
+    width: 40%;
+    height: 100%;
+    transform: skew(20deg);
+    margin-right: -70px;
+}
+
+.slant-box img {
+    overflow: hidden;
+    height: 400px;
+    opacity: 0.5;
+}
+
+.txt-sb-txt {
+    padding: 20px;
+    margin: 70px;
+    width: 70%;
 }
